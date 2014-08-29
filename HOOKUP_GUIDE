@@ -1,0 +1,9 @@
+Arduino pin	Function			Comment
+-------------------------------------------------------------------------------------------------
+D5		Rotary Encoder pin A		goes high first when rotating clockwise
+D4		Rotary Encoder pin B		goes high first when rotating counter clockwise
+D6		Rotary Encoder Button
+A8/D8		Rotary Encoder Green LED	optionally analog, configure with the LEDA define
+A9/D9		Rotary Encoder Red LED		optionally analog, currently unused
+13		Debug LED			on Arduino
+

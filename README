@@ -1,0 +1,5 @@
+This project makes a physical volume control knob from an Pololu A-Star 32U4 board (more or less a tiny Arduino Leonardo board, but any other ATMega32U4 based Arduino-like board should also work) and a rotary encoder. A simple hookup guide and parts list are included as separate files.
+
+It's based on the excellent work by Stefan Jones (https://github.com/stefanjones) on the HID USB stack which enables this to work using regular media keys. As a consequence, it works as a standard keyboard and doesn't require any extra drivers or software.
+
+There is one major issue though, it doesn't actually utilize the interrupt features of the ATMega32U4. I was surprised by how well it worked with polling alone considering the high sensitivity of the rotary encoder (15 degrees per step), so I left it that way as a performance demo. It sould be trivial to implement interrups due to the way the code is structured, see it as a programming exercise.
